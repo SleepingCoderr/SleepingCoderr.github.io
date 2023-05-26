@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System Management</title>
+    <link rel="stylesheet" href="request.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="pictures/2.png" alt="logo">
+        <ul>
+            <li><a href="LSM.html">Home</a></li>
+            
+              
+            <li class="dropdown">
+                <a href="#">Services</a>  
+                <div class="dropdown-content">
+                <a href="request.html">Request A Book</a>
+                <a href="search.html">Search For Books</a>
+                <a href="return.html">Return Book</a>
+                <a href="#">Feedback</a>
+            </div>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="background">
+        <img src="pictures/form.png" alt="background">
+    </div>
+    <div class="reg-container">
+        <h1>Issue Book</h1>
+
+    <form id="issueform" action="index.php" method="POST">
+        <label for="studentid">Student ID:</label>
+        <input type="text" id="studentid" name="studentid" required>
+
+        <label for="studentname">Student Name:</label>
+        <input type="email" id="studentname" name="studentname" required>
+
+        <label for="bookname">Title:</label>
+        <input type="text" id="bookname" name="bookname" required>
+
+        <label for="bookID">Book ISBN:</label>
+        <input type="text" id="bookID" name="bookID" required>
+
+        <button type="submit" id="submitBtn">Issue</button>
+    </form>
+    
+    <div id="confirmationMessage"></div>
+
+    <script src="function.js"></script>
+    </div>
+    
+</body>
+</html>

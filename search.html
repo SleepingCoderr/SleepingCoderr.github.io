@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System Management</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="function.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="pictures/2.png" alt="logo">
+        <ul>
+            <li><a href="LSM.html">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Services</a>  
+                <div class="dropdown-content">
+                <a href="#">Request A Book</a>
+                <a href="#">Search For Books</a>
+                <a href="#">Feedback</a>
+            </div>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </li>
+        </ul>
+    </div>
+    <div class="background">
+        <img src="pictures/search.png" alt="background"> 
+    </div>
+
+    <div class="search-container">
+        <label for="search-input">"That’s the thing about books. They let you travel without moving your feet." </label>
+        <div class="search-input-container">
+            <input type="text" id="search-input" placeholder="Search..." oninput="showSuggestions()">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="suggestions"></div>
+        <script src="function.js"></script>
+    </div>
+</body>
+</html>
